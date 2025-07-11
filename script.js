@@ -54,12 +54,8 @@ function drawHeart() {
         ctx.font = i+'px Arial';
         ctx.fillStyle = 'red';
         ctx.fillText(text, (canvas.width-ctx.measureText(text).width) / 2, (canvas.height+ctx.measureText(text).fontBoundingBoxAscent) / 2.4);
-        if(i==0){
-            debugger
-            dir=1
-        }
-        if(ctx.measureText(text).width>window.innerWidth-500){
-            dir=-1
+        if(i==0||ctx.measureText(text).width>window.innerWidth*.9){
+            dir*=-1
         }
         setTimeout(donedrow, 1, i+dir)
     }
