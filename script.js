@@ -16,7 +16,7 @@ function heartb(k) {
 
 function drawHeart() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = "#f73487";
+    ctx.strokeStyle = "#10de44";
     ctx.lineWidth = 1;
 
     drow(i)
